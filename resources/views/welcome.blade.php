@@ -19,8 +19,10 @@
                 font-family: 'Nunito', sans-serif;
             }
         </style>
+        @livewireStyles
     </head>
     <body class="antialiased">
+
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
@@ -44,7 +46,7 @@
                         </g>
                     </svg>
                 </div>
-
+                <livewire:counter /> 
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                     <div class="grid grid-cols-1 md:grid-cols-2">
                         <div class="p-6">
@@ -128,5 +130,6 @@
                 </div>
             </div>
         </div>
+        @livewireScripts
     </body>
 </html>
